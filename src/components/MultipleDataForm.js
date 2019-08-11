@@ -28,15 +28,15 @@ export default class MultipleDataForm extends Component {
             </Form.Group>
             <Form.Group>
                 <Form.Label>Choose specific amount</Form.Label>
-                <Form.Control></Form.Control>
+                <Form.Control type="text" placeholder="Eg. KES 10, 20, 50, 100,etc. "></Form.Control>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Choose data unit</Form.Label>
-                <Form.Control></Form.Control>
+                <Form.Control type="text" placeholder="Eg. MB, GB, etc."></Form.Control>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Choose validity period</Form.Label>
-                <Form.Control></Form.Control>
+                <Form.Control type="text" placeholder="Eg. Daily, Weekly, One-time, etc."></Form.Control>
             </Form.Group>
             <Button variant="primary" type="submit">
                 Send Data
