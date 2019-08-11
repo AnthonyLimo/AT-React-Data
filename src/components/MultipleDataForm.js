@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 export default class MultipleDataForm extends Component {
     constructor() {
@@ -18,10 +20,11 @@ export default class MultipleDataForm extends Component {
     }
 
     render() {
+       return(
         <Form>
             <Form.Group>
                 <Form.Label>Phone Number</Form.Label>
-                <Form.Control type="number" placeholder="Eg. 0722222222"></Form.Control>
+                <Form.Control type="text" placeholder="Eg. 0722222222"></Form.Control>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Choose specific amount</Form.Label>
@@ -36,5 +39,6 @@ export default class MultipleDataForm extends Component {
                 Send Data
             </Button>
         </Form>
+       )
     }
 }
