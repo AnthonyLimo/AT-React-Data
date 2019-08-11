@@ -8,6 +8,18 @@ export default class SingleDataForm extends Component {
         super()
     }
 
+    handleSubmit = event => {
+        event.preventDefault()
+        const data = new FormData(event.target)
+
+        fetch('', {
+            method: 'POST',
+            body: JSON.stringify({
+                
+            })
+        })
+    }
+
     render() {
         return(
             <Form>
