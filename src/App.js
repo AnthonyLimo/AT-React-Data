@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Navigation from './components/navigation'
-import SingleDataPurchase from './components/SingleDataPurchase'
+import DataPurchase from './components/DataPurchase'
 
 function App() {
   return (
     <div className="App">
       <Navigation/>
-      <SingleDataPurchase/>
+      <DataPurchase/>
     </div>
   );
 }
