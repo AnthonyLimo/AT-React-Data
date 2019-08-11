@@ -21,6 +21,18 @@ class TabNav extends Component {
         })
     }
 
+    handleMultipleDataSubmit = event => {
+        event.preventDefault()
+        const dataMultiple = new FormData(event.target)
+
+        fetch('', {
+            method: 'POST',
+            body: JSON.stringify({
+                
+            })
+        })
+    }
+
     //Create form for this component
 
     render() {
