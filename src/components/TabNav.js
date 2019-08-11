@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
+import SingleDataForm from './SingleDataForm'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-class SingleDataForm extends Component {
+class TabNav extends Component {
     constructor() {
         super()
     }
@@ -25,11 +26,11 @@ class SingleDataForm extends Component {
         return(
             <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
                 <Tab eventType="home" title="Single Data">
-                    
+                   <SingleDataForm/> 
                 </Tab>
             </Tabs>
         )
     }
 }
 
-export default SingleDataForm
+export default TabNav
