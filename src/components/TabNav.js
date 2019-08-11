@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import SingleDataForm from './SingleDataForm'
+import MultipleDataForm from './MultipleDataForm'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
@@ -25,8 +26,11 @@ class TabNav extends Component {
     render() {
         return(
             <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-                <Tab eventType="home" title="Single Data">
+                <Tab eventKey="single-data" title="Single Recipients">
                    <SingleDataForm/> 
+                </Tab>
+                <Tab eventKey="multiple-data" title="Multiple Recipients">
+                    <MultipleDataForm/>
                 </Tab>
             </Tabs>
         )
