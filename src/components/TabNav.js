@@ -4,7 +4,7 @@ import MultipleDataForm from './MultipleDataForm'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-class TabNav extends Component {
+export default class TabNav extends Component {
     constructor() {
         super()
     }
@@ -28,7 +28,7 @@ class TabNav extends Component {
         fetch('', {
             method: 'POST',
             body: JSON.stringify({
-                
+
             })
         })
     }
@@ -48,5 +48,3 @@ class TabNav extends Component {
         )
     }
 }
-
-export default TabNav

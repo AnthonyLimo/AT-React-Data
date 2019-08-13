@@ -8,9 +8,22 @@ export default class SingleDataForm extends Component {
         super()
     }
 
+    handleSubmit = event => {
+        event.preventDefault()
+        const data = new FormData(event.target)
+
+        fetch('', {
+            method: 'POST',
+            body: JSON.stringify({
+                
+            })
+        })
+    }
+
     render() {
         return(
             <Form>
+                <br/>
                 <Form.Group>
                     <Form.Label>Phone Number</Form.Label>
                     <Form.Control type="text" placeholder="Eg. 0722222222"></Form.Control>
