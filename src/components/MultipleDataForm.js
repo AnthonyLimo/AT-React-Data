@@ -22,6 +22,7 @@ export default class MultipleDataForm extends Component {
     render() {
        return(
         <Form>
+            <br/>
             <Form.Group>
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control type="text" placeholder="Eg. 0722222222"></Form.Control>
