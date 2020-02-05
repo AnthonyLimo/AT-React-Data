@@ -1,7 +1,12 @@
-import React from 'react'
+import React, {Component} from 'react'
+import Navbar from 'react-bootstrap/Navbar'
 
-function Navigation() {
-    return <div><nav className="navbar navbar-expand-lg navbar-light bg-light"><a className="navbar-brand">Data Rush</a></nav> <br/> <br /> </div>
+export default class Navigation extends Component {
+    render() {
+        return(
+            <Navbar bg="light" expand="lg">
+                <Navbar.Brand>Data Rush</Navbar.Brand>
+            </Navbar>
+        )
+    }
 }
-
-export default Navigation
